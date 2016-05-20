@@ -14,9 +14,7 @@
 
     <script type="text/javascript">
       $(document).ready(function() {
-        $('.page-header pre code, .top-resource-description pre code').each(function(i, block) {
-          hljs.highlightBlock(block);
-        });
+        hljs.initHighlightingOnLoad();
 
         $('[data-toggle]').click(function() {
           var selector = $(this).data('target') + ' pre code';
